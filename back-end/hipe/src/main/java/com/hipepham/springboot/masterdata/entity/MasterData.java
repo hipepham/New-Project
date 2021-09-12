@@ -2,10 +2,13 @@ package com.hipepham.springboot.masterdata.entity;
 
 import com.hipepham.springboot.common.base.entity.BaseEntity;
 import com.hipepham.springboot.masterdata.constant.MasterDataConstant;
-import com.sun.org.apache.xpath.internal.operations.Bool;
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Getter
 @Setter
@@ -13,9 +16,6 @@ import javax.persistence.*;
 @Entity
 @ToString
 public class MasterData extends BaseEntity {
-
-    @Column(name = MasterDataConstant.COLUMN_DELETED, nullable = false)
-    private Boolean deleted;
 
     @Column(name = MasterDataConstant.COLUMN_CODE, nullable = false)
     private String code;

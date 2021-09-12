@@ -30,6 +30,11 @@ public final class BaseEntityConstants {
      * The constant COLUMN_MODIFIED_BY.
      */
     public static final String COLUMN_MODIFIED_BY = "modified_by";
+
+    /**
+     * The constant COLUMN_DELETED.
+     */
+    public static final String COLUMN_DELETED = "deleted";
     /**
     * Hide constructor.
     */

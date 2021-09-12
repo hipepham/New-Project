@@ -11,7 +11,7 @@ import com.hipepham.springboot.history.entity.History;
 import com.hipepham.springboot.history.form.HistoryForm;
 import com.hipepham.springboot.history.service.HistoryService;
 import com.hipepham.springboot.history.service.impl.HistoryServiceImpl;
-import com.hipepham.springboot.userRole.SystemRoleEnum;
+import com.hipepham.springboot.auth.SystemRoleEnum;
 import lombok.extern.log4j.Log4j2;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +24,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import java.util.Date;
-import java.util.List;
 import java.util.Map;
 
 /**

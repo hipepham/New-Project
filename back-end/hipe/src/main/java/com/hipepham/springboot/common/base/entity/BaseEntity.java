@@ -54,4 +54,10 @@ public class BaseEntity implements Serializable {
      */
     @Column(name = BaseEntityConstants.COLUMN_MODIFIED_BY, nullable = false)
     private String modifiedBy;
+
+    /**
+     * The Modified by.
+     */
+    @Column(name = BaseEntityConstants.COLUMN_DELETED, nullable = false)
+    private Boolean deleted;
 }
